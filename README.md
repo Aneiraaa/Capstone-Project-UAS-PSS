@@ -1,7 +1,7 @@
 # Simple LMS Backend Enhancement 🚀
 
 Selamat datang di proyek **Simple LMS Backend Enhancement**! 🎉  
-Ini adalah proyek pribadi saya untuk meningkatkan dan menambah fitur pada sistem manajemen pembelajaran (LMS) sederhana menggunakan **Django** dan **Docker**. Tujuan utama proyek ini adalah membuat LMS yang lebih **powerful**, **keren**, dan **lebih mudah digunakan** bagi pengguna dalam menjalani pembelajaran online. 💻✨
+Ini adalah proyek pribadi saya untuk meningkatkan dan menambah fitur pada sistem manajemen pembelajaran (LMS) sederhana menggunakan **Django**, **Python**, dan **Docker**. Tujuan utama proyek ini adalah membuat LMS yang lebih **powerful**, **keren**, dan **lebih mudah digunakan** bagi pengguna dalam menjalani pembelajaran online. 💻✨
 
 Dengan menambahkan berbagai fitur baru dan perbaikan, saya berharap LMS ini dapat memenuhi kebutuhan pembelajaran yang lebih efisien dan menyenangkan! 🎓🔥
 
@@ -28,3 +28,4 @@ Tujuan utama dari proyek ini adalah:
 - **Pengujian**: Django Test Framework
 - **API**: Django REST Framework (DRF)
 - **Containerization**: Docker
+- **Bahasa Pemrograman**: Python
