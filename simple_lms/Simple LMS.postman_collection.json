@@ -1,0 +1,557 @@
+{
+	"info": {
+		"_postman_id": "021460b1-1b13-43a2-9598-1ac442bc466c",
+		"name": "Simple LMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "6101013"
+	},
+	"item": [
+		{
+			"name": "[Fitur +2] Manajemen Profil Pengguna",
+			"item": [
+				{
+					"name": "[Endpoint] Show Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}/users/1/profile"
+					},
+					"response": []
+				},
+				{
+					"name": "[Endpoint] Edit Profil",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\" : \"Robert\",\n    \"last_name\" : \"Lewandowski\",\n    \"email\" : \"rlewandowski9@gmail.com\",\n    \"password\" : \"rlewansowski09\",\n    \"phone\" : \"08123456\",\n    \"description\" : \"Contoh Deskrtipsi\",\n    \"profile_picture\" : \"Ini contoh gambar edit\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/users/1/profile"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "[Fitur +4] Course Announcements",
+			"item": [
+				{
+					"name": "[Endpoint] Create announcement",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\" : \"Ini Pengumuman\",\n    \"date\" : \"2024-12-12\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/courses/1/announcements"
+					},
+					"response": []
+				},
+				{
+					"name": "[Endpoint] Show announcement",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}/courses/1/announcements"
+					},
+					"response": []
+				},
+				{
+					"name": "[Endpoint] Edit announcement",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\" : \"Ini Pengumuman Edit\",\n    \"date\" : \"2024-12-12\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/announcements/1"
+					},
+					"response": []
+				},
+				{
+					"name": "[Endpoint] Delete announcement",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}/announcements/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "[Fitur +3] Content Completion Tracking",
+			"item": [
+				{
+					"name": "[Endpoint] Add completion tracking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\" : 1,\n    \"content_id\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/courses/1/completion"
+					},
+					"response": []
+				},
+				{
+					"name": "[Endpoint] Show completion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}/courses/1/completion"
+					},
+					"response": []
+				},
+				{
+					"name": "[Endpoint] Delete completion",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}/1completion/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "[Fitur +4] Course Feedback",
+			"item": [
+				{
+					"name": "[Endpoint] Add Feedback",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\" : 1,\n    \"content\" : \"Ini Feedback\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/courses/1/feedback"
+					},
+					"response": []
+				},
+				{
+					"name": "[Endpoint] Show feedback",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}/courses/1/feedback"
+					},
+					"response": []
+				},
+				{
+					"name": "[Endpoint] Edit feedback",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\" : \"Ini Feedback Edit\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/feedback/1"
+					},
+					"response": []
+				},
+				{
+					"name": "[Endpoint] Delete feedback",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}/feedback/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "[Fitur +3] Content Bookmarking",
+			"item": [
+				{
+					"name": "[Endpoint] Add bookmarking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\" : 1,\n    \"content_id\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/courses/1/bookmarks"
+					},
+					"response": []
+				},
+				{
+					"name": "[Endpoint] Show bookmark",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}/users/1/bookmarks"
+					},
+					"response": []
+				},
+				{
+					"name": "[Endpoint] Delete bookmark",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}/bookmarks/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "[Fitur +4] Course Categories Management",
+			"item": [
+				{
+					"name": "[Endpoint] Add Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"Kategori 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/categories"
+					},
+					"response": []
+				},
+				{
+					"name": "[Endpoint] Show category",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "[Endpoint] Delete category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}/categories/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "[Fitur +2] Content Approval Workflow",
+			"item": [
+				{
+					"name": "[Endpoint] Update content",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"Content\",\n    \"body\" : \"Content Body\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/content/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Publish",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{base_url}}/content/1/publish"
+					},
+					"response": []
+				},
+				{
+					"name": "Unpublish",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{base_url}}/content/1/unpublish"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "[Endpoint +1] Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\" : \"Robert\",\n    \"last_name\" : \"Lewandowski\",\n    \"email\" : \"rlewandowski9@gmail.com\",\n    \"password\" : \"rlewansowski09\",\n    \"phone\" : \"08123456\",\n    \"description\" : \"Contoh Deskrtipsi\",\n    \"profile_picture\" : \"Ini contoh\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/register"
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\" : \"Robert\",\n    \"last_name\" : \"Lewandowski\",\n    \"email\" : \"rlewandowski9@gmail.com\",\n    \"password\" : \"rlewansowski09\",\n    \"phone\" : \"08123456\",\n    \"description\" : \"Contoh Deskrtipsi\",\n    \"profile_picture\" : \"Ini contoh\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/register"
+					},
+					"status": "CREATED",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.13.1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Jan 2025 12:55:14 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User  registered successfully\",\n    \"user_id\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Data Science\",\n    \"description\" : \"Deskrtipsi Data Science\",\n    \"max_students\" : 20\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/courses"
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"Data Science\",\n    \"description\" : \"Deskrtipsi Data Science\",\n    \"max_students\" : 20\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/courses"
+					},
+					"status": "CREATED",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.13.1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Jan 2025 12:55:19 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"course_id\": 1,\n    \"message\": \"Course created successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "[Endpoint +1] Batch Enroll Students",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"student_ids\" : [1]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/courses/1/enroll"
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"student_ids\" : [1]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/courses/1/enroll"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.13.1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Jan 2025 12:55:28 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "69"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"enrolled_students\": [\n        1\n    ],\n    \"message\": \"Students enrolled successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\" : \"Komentar Dilarang\",\n    \"user_id\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/courses/1/comments"
+			},
+			"response": []
+		},
+		{
+			"name": "[Endpoint +1] Content Comment Moderation",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": "{{base_url}}/comments/1/moderate"
+			},
+			"response": []
+		},
+		{
+			"name": "[Endpoint +1] Course Analytics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}/courses/1/analytics"
+			},
+			"response": []
+		},
+		{
+			"name": "[Endpoint +1] User Activity Dashboard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}/users/1/activity"
+			},
+			"response": []
+		}
+	]
+}
